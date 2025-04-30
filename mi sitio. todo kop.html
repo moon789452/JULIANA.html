@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="utf-8">
@@ -9,7 +9,58 @@
         
         .nace{
             color:rgb(41, 138, 86);
-        }
+            font-family:italic;
+            }
+            
+        .uno{
+           background-color:rgb(194, 172, 167);
+           border-top:3px solid rgb(219, 209, 27);
+           line-height:1em;
+           font-style:helvetica;
+            }
+            
+            .dos{
+                 background-color:rgb(172, 194, 169);
+           border-top:3px solid rgb(222, 71, 44);
+           line-height:1em;
+           font-style:italic;
+            }
+            
+            .tres{
+                 background-color:rgb(174, 230, 166);
+           border-top:3px solid rgb(121, 44, 222);
+           line-height:1em;
+           font-style:monospace;
+                }
+                
+              .cuatro{
+                 background-color:rgb(218, 113, 227);
+           border-top:3px solid rgb(130, 47, 17);
+           line-height:1em;
+           font-style:sans-serif;  
+           
+              }
+              
+            .cinco{
+                 background-color:rgb(211, 217, 26);
+           border-top:3px solid rgb(52, 143, 91);
+           line-height:1em;
+           font-style:italic;
+                
+            }
+            
+            .seis{
+                 background-color:rgb(175, 168, 230);
+           border-top:3px solid rgb(121, 44, 222);
+           line-height:1em;
+           font-style:monospace;
+                
+            }
+            
+      p .uno{
+           background-color:rgb(235, 228, 235);
+          
+      }
         
         th {
         background-color:rgb(214, 167, 190);
@@ -22,19 +73,64 @@
             height:170px;
             font-style: italic;
              width: 90%;
+             line-height:1.5em;
+             text-align:center;
             
-        
         }
     
      
         body {
             
-            background-color:rgb(235, 197, 228);
-                     font-size: 19px;
-        }
-    
+            background-color:rgb(235, 197, 228);    
+                     font-size: 19px;}
+                     
+             nav{
+            background-color:rgb(73, 128, 119);
+            padding:0;
+            
+        }          
         
-        h1 {
+        nav ul{
+            list-style:none;
+            padding:0;
+            margin:20px;
+            display:flex;
+            text-align:center;
+            line-height:1em;
+            }
+            
+            nav ul li{
+                margin:08px;
+                 
+                
+            }
+            
+            nav ul li a{
+                color:white;
+                text-decoration:none;
+                font-weight:bold;
+                
+                }
+                
+            nav ul li a:hover{
+                text-decoration: underline;
+                }
+                
+             a:hover{
+                background-color: rgb(154, 189, 151);
+                
+            }
+             
+             a:active{
+                 background-color: rgb(212, 141, 115);
+             } 
+             
+             a:focus{
+                 background-color: rgb(229, 212, 230);
+             }
+               
+                
+            h1 {
             color: rgb(199, 69, 199);
             font-size: 1.2em;
             font-family:cursive;
@@ -45,10 +141,8 @@
             font-size: 1em;
             font-family:sans-serif;
              width: 70%;
-              
-             
-             
-        }
+            
+               }
         
         
           h3 {
@@ -58,10 +152,7 @@
              width: 60%;
              height:30px;
               
-             
-             
-             
-        }  
+                }  
          
          h4 {
             color: rgb(35, 45, 235);
@@ -109,10 +200,10 @@
                height:180px;
                overflow-y:auto;
                overflow-x:hidden;
-           }
-           
-           
-           
+                line-height:1.5em;
+                 
+                }
+                         
                #grupos-populares {
                     background-color:rgb(205, 245, 117);
                      width: 70%;
@@ -123,7 +214,10 @@
                      #FANS{
                         width:18%;
                         float:left;
-                      margin-right:15px;
+                        position:relative;
+                        top:20px;
+                        right:33px;
+                        margin-right:15px;
                       margin-bottom:50px;
                       
                }
@@ -131,29 +225,36 @@
                #cantantes-footer{
                     width:20%;
                         float:left;
+                        position:relative;
+                        top:20px;
+                       left:33px;
                       margin-right:150px;
                       margin-bottom:50px;
+                   
                }
-               
-           .lo-importante{
-               background-color:rgb(245, 245, 237); 
-               font-family:flinstones;
-               font-size: 0.9em;
-                width: 70%;
-                     
-           }
-               
               
-
         </style>
         
-       
+       <header>ANALISIS DE K - POP </header>
+   
     </head>
     <body>
     
   
-    <header>ANALISIS DE K - POP </header>
-    <nav> Listas, e introduccion importante </nav>
+    <nav> 
+    
+    <ul>
+     <li><a href="#mas">INCIO</a> </li>
+         
+         <li><a href="#nostros"> NOSOTROS</a> </li>
+          
+         <li> <a href="#telefono"> CONTACTOS </a></li>
+         
+         <li> <a href="#tema"> TEMAS DE INTERES </a></li>
+         
+     </ul>
+       
+    </nav>
      
      <ul>
      
@@ -171,7 +272,7 @@
  
     <section>
         
-       <div id="informacion-importante"> <h1> Informacion Basica¡¡¡ </h1>
+      <br> <div id="informacion-importante"> <h1> Informacion Basica¡¡¡ </h1>
     
       
         <p> El K-pop es <em>un género musical que fusiona el 
@@ -187,7 +288,7 @@
       <article>
       
       
-      <h2> INTERES </h2>
+      <h2 id="tema"> INTERES </h2>
       
       <p> <br>El interés por las estrellas del K-pop se extendió naturalmente a los artículos de moda o belleza que ellos 
 <strong> Una parte muy importante del K-pop es la comunicación de los artistas con sus fans </strong> ello suben muchainformación sobre cómo es su día a día, y de esta forma sus fans pueden saber fácilmente qué marcas de ropa usan y cómo es su rutina de cuidado de la piel.</P>
@@ -299,13 +400,17 @@
        
    </aside>
    
-      <footer id="cantantes-footer">Juliana Saray Delgado, correo Julianasaray24@hotmail.com, contacto 3157336272 - </footer>
+      <footer id="cantantes-footer"></footer>
+      
+      <footer id="telefono">Juliana Saray Delgado, correo Julianasaray24@hotmail.com, contacto 3157336272 - </footer>
    
     <img id="cantantes-footer" src="https://f.fcdn.app/imgs/bdde24/hortensia.com.uy/hor/b982/webp/blog/565/760x0/k-pop-1.png" width="200">
    
          </body>
 </html>
-      
-      
+
+ 
+          
+         
                
   
