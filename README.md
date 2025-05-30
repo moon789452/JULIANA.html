@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> TODO DE K-POP</title>
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  
+      
+  </head>
+        <style> 
+        
+        .nace{
+            color:rgb(41, 138, 86);
+            font-family:italic;
+            }
+            
+        .uno{
+           background-color:rgb(194, 172, 167);
+           border-top:3px solid rgb(219, 209, 27);
+           line-height:1em;
+           font-style:helvetica;
+            }
+            
+            .dos{
+                 background-color:rgb(172, 194, 169);
+           border-top:3px solid rgb(222, 71, 44);
+           line-height:1em;
+           font-style:italic;
+            }
+            
+            .tres{
+                 background-color:rgb(174, 230, 166);
+           border-top:3px solid rgb(121, 44, 222);
+           line-height:1em;
+           font-style:monospace;
+                }
+                
+              .cuatro{
+                 background-color:rgb(218, 113, 227);
+           border-top:3px solid rgb(130, 47, 17);
+           line-height:1em;
+           font-style:sans-serif;  
+           
+              }
+              
+            .cinco{
+                 background-color:rgb(211, 217, 26);
+           border-top:3px solid rgb(52, 143, 91);
+           line-height:1em;
+           font-style:italic;
+                
+            }
+            
+            .seis{
+                 background-color:rgb(175, 168, 230);
+           border-top:3px solid rgb(121, 44, 222);
+           line-height:1em;
+           font-style:monospace;
+                
+            }
+            
+     
+        th {
+        background-color:rgb(214, 167, 190);
+           width:110px;
+           height:30px;
+        }
+        
+        table{
+            width:520px;
+            height:170px;
+            font-style: italic;
+             width: 90%;
+             line-height:1.5em;
+             text-align:center;
+             border:5px ridge rgb(209, 69, 209);
+            
+        }
+    
+     
+        body {
+            
+            background-color:rgb(235, 197, 228);    
+                     font-size: 19px;}
+                     
+             nav{
+            background-color:rgb(73, 128, 119);
+            padding:0;
+            
+        }          
+        
+        nav ul{
+            list-style:none;
+            padding:0;
+            margin:20px;
+            display:flex;
+            text-align:center;
+            line-height:1em;
+            }
+            
+            nav ul li{
+                margin:08px;
+                 
+                
+            }
+            
+            nav ul li a{
+                color:white;
+                text-decoration:none;
+                font-weight:bold;
+                
+                }
+                
+               a:hover{
+                background-color: rgb(154, 189, 151);
+                
+            }
+             
+             a:active{
+                 background-color: rgb(212, 141, 115);
+             } 
+             
+             a:focus{
+                 background-color: rgb(229, 212, 230);
+             }
+               
+                
+            h1 {
+            color: rgb(199, 69, 199);
+            font-size: 1.2em;
+            font-family:cursive;
+        }
+        
+        h2 {
+            color: rgb(194, 49, 104);
+            font-size: 1em;
+            font-family:sans-serif;
+             width: 70%;
+            
+               }
+        
+        
+          h3 {
+            color: rgb(38, 38, 237);
+            font-size: 1em;
+            font-family:monospace;
+             width: 60%;
+             height:30px;
+              
+                }  
+         
+         h4 {
+            color: rgb(35, 45, 235);
+            font-size:1;
+            font-family:monospace;
+        }
+        
+        
+        
+        h5{
+            color:rgb(235, 14, 95);
+            font-size: 1em;
+            font-family:sans-serif;
+             
+              
+            }
+        
+        h6 {
+            color:rgb(222, 29, 222);
+            
+            font-size:1em;
+            font-family:helvetica;
+            
+        }
+      
+                    p {
+            color: rgb(56, 56, 148);
+             font-size: 0.9em;
+            font-family:helvetica;
+             font-weight:bold ;
+              width: 70%;
+        }
+        
+           #listado-escuchado{
+               background-color:rgb(186, 204, 130);
+                width: 70%;
+                 height:20px;
+                 
+              
+                   }
+           
+           #informacion-importante{
+               background-color:rgb(229, 235, 211);
+               width:70%;
+               height:180px;
+               overflow-y:auto;
+               overflow-x:hidden;
+                line-height:1.5em;
+                margin:15px 0px 10px 6px;
+                border:2px dashed rgb(39, 82, 45);
+                padding:10px;
+                 
+                }
+                         
+               #grupos-populares {
+                    background-color:rgb(205, 245, 117);
+                     width: 70%;
+                      height:60px;
+                      margin-right:10px;
+                      margin-bottom:10px;
+                      border:6px ridge red;
+                      
+                      
+                      }
+                      
+                     #FANS{
+                        width:70px;
+                        float:left;
+                        position:relative;
+                        top:11px;
+                        right:25px;
+                        margin-right:15px;
+                      margin-bottom:50px;
+                      clear:both;
+                      padding:17px;
+               }
+               
+               #cantantes-footer{
+                    width:20%;
+                        float:left;
+                        position:relative;
+                        top:20px;
+                       left:33px;
+                      margin-right:150px;
+                      margin-bottom:50px;
+                      border:6px ridge red;
+                   
+               }
+             #container{
+                 width:400;
+                 margin:auto;
+                 border: 1px solid rgb(230, 14, 14) ;
+                 border-top:10px solid purple;
+                 padding:15px;
+                 
+                 }  
+               
+              
+        </style>
+        
+       <header>ANALISIS DE K - POP </header>
+   
+       
+    <body>
+    
+    <div id="container">
+  
+    <nav> 
+    
+    <ul>
+     <li><a href="#mas">INCIO</a> </li>
+         
+         <li><a href="#nostros"> NOSOTROS</a> </li>
+          
+         <li> <a href="#telefono"> CONTACTOS </a></li>
+         
+         <li> <a href="#tema"> TEMAS DE INTERES </a></li>
+         
+     </ul>
+       
+    </nav>
+     
+     <ul>
+     
+      <img id="FANS" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/cute/Heart.png" alt="corazon de kpop" width="203">  
+      
+      <li><a href="#unico">CARACTERISTICAS</a> </li>
+         
+         <li><a href="#grupos-populares">GRUPOS</a> </li>
+          
+         <li> <a href="#fotos"> IMAGENES</a></li>
+         
+         
+     </ul>
+    
+ 
+    <section>
+        
+      <br> <div id="informacion-importante"> <h1> Informacion Basica¡¡¡ </h1>
+    
+      
+        <p> El K-pop es <em>un género musical que fusiona el 
+  pop con otros  estilos, como el hip hop, el rock, el R&B y la electrónica. También  se refiere a la industria musical asociada a este género. </em>  
+        <img src="https://f.fcdn.app/imgs/35292f/hortensia.com.uy/hor/9e65/webp/wysiwyg/1/1280x0/kpop4.png"alt="fandoms" width="203"> </p>
+  
+    
+     <h2>¿COMÓ <span class="nace">NACE?</span> UN POCO DE HISTORIA</h2>
+     
+   <p> A partir de la década de 1990, el K-pop comenzó a escucharse fuera de su país de origen, atrayendo a sus fans con canciones pegajosas,   presentaciones de danza energética y una estética muy cuidada de los miembros de las bandas. </p> </div>
+ 
+      
+      
+      <article>
+      
+      
+      <h2 id="tema"> INTERES </h2>
+      
+      <p> <br>El interés por las estrellas del K-pop se extendió naturalmente a los artículos de moda o belleza que ellos 
+<strong> Una parte muy importante del K-pop es la comunicación de los artistas con sus fans </strong> ello suben muchainformación sobre cómo es su día a día, y de esta forma sus fans pueden saber fácilmente qué marcas de ropa usan y cómo es su rutina de cuidado de la piel.</P>
+      
+  </article>
+   </section>
+   <aside>
+    
+                    
+        <h3 id="unico"> CARACTERISTICAS!</h3>
+    
+    <ul>
+        <li> Es un subgénero del pop que se originó en Corea del Sur.</li> <br> 
+        
+        <li> Se caracteriza por su variedad de <em> estilos y coreografías</em> 
+  
+  <li> Es un género híbrido que incluye diversos elementos musicales y   visuales.</li> <br> 
+  
+  <li>Los artistas de K-pop son conocidos como "ídolos".</li> <br> 
+  
+  <li>
+   Las agencias de entretenimiento en Corea del Sur ofrecen contratos  a los artistas potenciales, a veces a un edad temprana </li> <br> 
+   
+    </ul>
+    
+     <h4 id="grupos-populares"> LOS TRES GRUPOS MAS FAMOSOS DEL K - POP</h4>
+ 
+ 
+     <table border>
+            <thead>
+                <tr>
+                    <th> NÚMERO </th>
+                    
+                    <th>GRUPO</th>
+                    
+                    <th>CARACTERISTICA</th>
+                    
+                </tr>
+            </thead>
+            
+            <tr>
+                    <td> 1. </td>
+                    
+                    <td>BTS</td>
+                    
+                    <td> Considerado el "rey del K-pop"</td>
+                </tr>
+                
+                 <tr>
+                 
+                    <td> 2. </td>
+                    
+                    <td>BLACKPINK </td>
+                    
+              <td>La banda de chicas de K-pop más seguida en Spotify </td>
+                    </tr>
+                
+                    <tr>
+                    
+                    <td>3. </td>
+                    
+                    <td> Stray Kids: </td>
+                    
+                    <td> Uno de los grupos más populares del K-pop, según Univision </td>
+                    
+                </tr>
+                
+                
+            </table>
+            
+            
+  <h5 id="listado-escuchado">  CANCIONES MAS ESCUCHADA¡¡  </h5>
+
+  <ol>
+  
+  <li class="uno"> <a target="_blank " href="https://www.letras.com/jennie/spot-feat-zico/" >SPOT! (feat. JENNIE) Artista: ZICO </a></li>
+  
+  <li class="dos"> <a target="_blank " href="https://www.letras.com/blackpink/as-if-its-your-last/significado.html"> As If It's Your Last  Artista: BLACKPINK </a></li>
+  
+  <li class="tres">  <a target="_blank " href="https://www.letras.com/jin-bts/the-astronaut/">  The Astronaut  Artista: JIN </a></li>
+  
+  <li class="cuatro"> <a target="_blank " href="https://music.apple.com/py/song/solo/1441819350"> SOLO  Artista: JENNIE (from BLACKPINK) </a></li>
+  
+  <li class="cinco"> <a target="_blank " href="https://www.deezer.com/es/track/2515087001">   Seven  Artista: Jung Kook & Latto </a></li>
+  
+  <li class="seis"><a target="_blank " href="https://music.apple.com/co/album/standing-next-to-you/1709554767?i=1709554997">   Standing Next to You Artista: Jung Kook </a></li>
+  
+  
+</ol>
+       
+       <h6 id="fotos"> IMAGENES DE CADA GRUPO DE K-POP </h6>
+       
+       <ul>
+           <li> <img src= "https://i.pinimg.com/736x/45/8b/f3/458bf3789bbaac52d2f9fa0cee658054.jpg" alt="grupo BTS" width="200"> </li> <br> 
+           <li> <img src= "https://static.wikia.nocookie.net/kpop/images/e/e4/Blackpink_para_Bork_Pink_5.png/revision/latest?cb=20230314215744&path-prefix=es" alt="grupo BLACKPINK"  width="200"> </li><br> 
+
+   <li> <img src="https://www.excelsior.com.mx/media/pictures/2024/11/18/3213926.jpg" alt="grupo STRAY KIDS" width="200"> </li>
+      
+         <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://ca-times.brightspotcdn.com/dims4/default/df436fd/2147483647/strip/true/crop/3315x2296+0+0/resize/1200x831!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9c%2F7e%2F04f056354c19888ba613f1f10cfe%2Fcf23698f3598465181748b7e77ff9038" class="d-block w-100" alt="bts">
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/20240809_Blackpink_Pink_Carpet_09.png/330px-20240809_Blackpink_Pink_Carpet_09.png" class="d-block w-100" alt="pink">
+    </div>
+    <div class="carousel-item">
+      <img src="https://static.wikia.nocookie.net/stray-kids/images/2/2c/HOP_Teaser_1_Stray_Kids.jpg/revision/latest/scale-to-width-down/1000?cb=20241120141241" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                   
+           </ul>
+           
+           
+           <h6> Autor </h6> 
+           
+             <p> este manual fue creado por<a> https://hortensia.com.uy/blog/k-pop-la-musica-insignia-de-la-cultura-coreana-107?srsltid=AfmBOoo8ozOReW1I-jGdZpK0n--y3tUiVjEVavqeXvZgI88tBXaUAaV8 </a> 
+     
+       </p>
+       
+   </aside>
+   
+      <footer id="cantantes-footer"></footer>
+      
+      <footer id="telefono">Juliana Saray Delgado, correo Julianasaray24@hotmail.com, contacto 3157336272 - </footer>
+   
+    <img id="cantantes-footer" src="https://f.fcdn.app/imgs/bdde24/hortensia.com.uy/hor/b982/webp/blog/565/760x0/k-pop-1.png" width="200">
+   </div>
+         </body>
+</html>
+
+     
+        
+           
